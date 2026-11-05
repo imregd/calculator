@@ -23,3 +23,12 @@ this should give 42
 ## Prerequisit
 
 Python 3
+test dependancy
+sccm 4910 environment activation command: 
+
+source /opt/python-venv/sccm-4910/bin/activate
+python3 -m pytest --version
+
+ensure it prints out a version
+
+run ./check.sh to have automated tests
