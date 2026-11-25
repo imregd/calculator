@@ -1,0 +1,6 @@
+Processed 6 records: 6 succeeded, 0 failed.
+Record 2: DIVISION_BY_ZERO
+Record 4: UNKNOWN_OPERATION
+Record 5: INVALID_NUMBER
+Record 8: INVALID_NUMBER
+Processed 8 records: 4 succeeded, 4 failed.
