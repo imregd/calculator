@@ -18,8 +18,8 @@ submit the final CI run as a separate PDF or screenshot.
 
 - Starting commit: 6e81effd9dafd47e23fb060f6e6e9a61fb790c82
 - Reused lab files, tests and examples: calculator.py, test_calculator.py, check.sh, run.sh
-- Feature branch and PR: [name, URL and saved PR file in evidence/]
-- Self-review: [what you checked in the diff and the outcome]
+- Feature branch and PR: devops-coursework, https://github.com/imregd/calculator/pull/3, "evidence\save_feature_branch_pr.png"
+- Self-review: I reviewed the diff (files changed) and ensured the yaml file was correct, the tests covered valid and invalid test cases and that the functions matched what the brief requests. I did notice a file called -f that contained random git information, so I deleted it as it was not needed. After reviewing the diff I proceeded to merge the pull request into the main branch
 
 ## 2. Test failure, diagnosis and fix
 
@@ -46,8 +46,8 @@ The hook may use the same failure case as section 2 or another case. A blocked
 commit attempt has no new commit hash; identify its base commit and changes.
 
 ## 4. Native and container batch runs
-
-- Native normal/mixed runs: [commands and saved output/diagnostic paths]
+ 
+- Native normal/mixed runs: I ran python3 batch_runner.py data/normal.csv results.csv on a Ubuntu Linux machine, giving 	6 succeeded, 0 failed, I then ran python3 batch_runner.py data/mixed.csv mixed-results.csv  which gave 8 records processed, 4 succeeded and 4 failed (DIVISION_BY_ZERO, UNKNOWN_OPERATION and two INVALID_NUMBER)
 - Container build/run commands and image tag: [README reference or commands]
 - Input/output transfer: [how files enter and leave the container]
 - Mixed-run interpretation: [summary, one error and later successful records]
